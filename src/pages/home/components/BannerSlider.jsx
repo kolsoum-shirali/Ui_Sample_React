@@ -15,7 +15,7 @@ const slidersInfo = [
 
 export default function BannerSlider() {
   return (
-    <Swiper pagination={true} modules={[Pagination]} className="w-full h-full col-span-12 md:col-span-8">
+    <Swiper pagination={true} modules={[Pagination]} className="w-full h-full ">
       {slidersInfo.map((item, index) => {
         return (
           <SwiperSlide key={index} className="">
