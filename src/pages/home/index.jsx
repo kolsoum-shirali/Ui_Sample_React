@@ -1,20 +1,19 @@
-import BannerSlider from './components/BannerSlider'
-import HomeCategories from './components/HomeCategories'
+import BannerSlider from "./components/slider/BannerSlider";
+import HomeCategories from "./components/HomeCategories";
+import Services from "./components/services/Services";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className='container mx-auto grid grid-cols-12 gap-4 mt-10'>
-
-        <div className='col-span-4 hidden md:block'>
+    <div className="container mx-auto space-y-5 md:space-y-20">
+      <div className="grid grid-cols-12 gap-4 mt-10">
+        <div className="col-span-4 hidden md:block">
           <HomeCategories />
         </div>
-        <div className='col-span-12 md:col-span-8'>
-          <BannerSlider />
-        </div>
+        <BannerSlider />
       </div>
+      <Services />
     </div>
-  )
+  );
 };
 
 export default HomePage;
