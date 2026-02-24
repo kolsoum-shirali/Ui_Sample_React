@@ -1,7 +1,7 @@
 import BannerSlider from "./components/slider/BannerSlider";
 import HomeCategories from "./components/HomeCategories";
 import Services from "./components/services/Services";
-
+import BannerServices from "./components/services/BannerServices";
 const HomePage = () => {
   return (
     <div className="container mx-auto space-y-5 md:space-y-20">
@@ -12,6 +12,7 @@ const HomePage = () => {
         <BannerSlider />
       </div>
       <Services />
+      <BannerServices />
     </div>
   );
 };
