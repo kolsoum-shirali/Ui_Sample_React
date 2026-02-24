@@ -28,12 +28,14 @@ export default function BannerServices() {
         >
           <img src={service.img} alt={service.img} className="md:rounded-md" />
           <div className="absolute inset-0 bg-gray-950/60 md:rounded-md flex justify-center">
-            <div className="text-white flex flex-col justify-center items-center space-y-4 h-full w-4/5">
+            <div className="text-white flex flex-col justify-center items-center space-y-3 h-full lg:w-11/12 p-3">
               <h2 className="text-lg md:text-xl lg:text-2xl">
                 {service.title}
               </h2>
-              <p className="text-sm md:text-base lg:text-lg">{service.desc}</p>
-              <button className="bg-green-600  p-3 md:px-8 rounded-full text-sm lg:text-base hover:bg-white hover:transition-colors hover:text-green-800 border-2 border-green-600">
+              <p className="text-sm md:text-base lg:text-lg text-justify">
+                {service.desc}
+              </p>
+              <button className="bg-green-600 px-5 py-2 rounded-full text-sm lg:text-base hover:bg-white hover:transition-colors hover:text-green-800 border-2 border-green-600">
                 {service.btnTitle}
               </button>
             </div>
