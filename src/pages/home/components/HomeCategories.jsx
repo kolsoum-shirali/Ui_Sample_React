@@ -8,7 +8,7 @@ const categories = [
 
 export default function HomeCategories() {
   return (
-    <div className="hidden md:block">
+    <div>
       <h3 className="text-white bg-green-600 text-center p-2 md:text-base lg:text-lg rounded-t-md">
         دسته بندی
       </h3>

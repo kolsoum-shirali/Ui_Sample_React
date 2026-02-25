@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="container mx-auto space-y-5 md:space-y-20">
       <div className="grid grid-cols-12 gap-4 mt-10">
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-4 hidden md:block">
           <HomeCategories />
           <div className="overflow-hidden">
             <img
