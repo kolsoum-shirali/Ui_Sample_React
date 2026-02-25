@@ -4,6 +4,7 @@ import Services from "./components/services/Services";
 import BannerServices from "./components/services/BannerServices";
 import SingleBanner from "../../assets/img/06.jpg";
 import NewProductsSlider from "./components/NewProucts/NewProductsSlider";
+import BlogSlier from './components/blogs/BlogSlier'
 const HomePage = () => {
   return (
     <div className="container mx-auto space-y-5 md:space-y-20">
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Services />
       <BannerServices />
       <NewProductsSlider />
+      <BlogSlier/>
     </div>
   );
 };
