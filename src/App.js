@@ -6,6 +6,8 @@ import {
   Footer,
   Header,
   NotFound,
+  AboutUs,
+  ContactUs,
 } from "./pages/index";
 import "./App.css";
 
@@ -16,6 +18,8 @@ function App() {
         {/* Layout Route for Header and Footer */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
         {/* Routes without Layout */}
         <Route path="/login" element={<Login />} />
