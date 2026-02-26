@@ -9,7 +9,8 @@ import { Pagination } from "swiper/modules";
 
 const slidersInfo = [
   {
-    title: "امروز سبزیجات سالم و ارگانیک خود را آنلاین دریافت کنید.",
+    title: "ما مسیر مزرعه تا خانه شمارا هموار کردیم.",
+
     img: banner1,
     color: "bg-yellow-100",
   },
@@ -19,7 +20,8 @@ const slidersInfo = [
     color: "bg-blue-100",
   },
   {
-    title: "ما مسیر مزرعه تا خانه شمارا هموار کردیم.",
+    title: "امروز سبزیجات سالم و ارگانیک خود را آنلاین دریافت کنید.",
+
     img: banner3,
     color: "bg-emerald-100",
   },

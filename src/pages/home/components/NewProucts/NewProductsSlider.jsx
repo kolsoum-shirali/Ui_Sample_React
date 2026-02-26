@@ -11,14 +11,14 @@ import product7 from "../../../../assets/img/Products/7.jpg";
 import product8 from "../../../../assets/img/Products/8.jpg";
 
 const products = [
-  { img: product1 },
-  { img: product2 },
-  { img: product3 },
-  { img: product4 },
-  { img: product5 },
-  { img: product6 },
-  { img: product7 },
-  { img: product8 },
+  { img: product1,title:'گل کلم',oldPrice:55000,newPrice:40000 },
+  { img: product2,title:'سیب زمینی',oldPrice:55000,newPrice:40000  },
+  { img: product3,title:'خیار',oldPrice:55000,newPrice:40000  },
+  { img: product4,title:'بادمجان',oldPrice:55000,newPrice:40000  },
+  { img: product5,title:'پیاز',oldPrice:55000,newPrice:40000  },
+  { img: product6,title:'فلفل دلمه ای',oldPrice:55000,newPrice:40000  },
+  { img: product7,title:'گوجه',oldPrice:55000,newPrice:40000  },
+  { img: product8,title:'بامیه',oldPrice:55000,newPrice:40000  },
 ];
 
 export default function NewProductsSlider() {

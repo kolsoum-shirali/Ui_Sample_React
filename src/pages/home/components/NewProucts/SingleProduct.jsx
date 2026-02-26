@@ -22,14 +22,14 @@ export default function SingleProduct({ product }) {
           <Rating />
           <span className="text-gray-500 text-sm mt-1">(5)</span>
         </div>
-        <h4>میوه تازه</h4>
+        <h4>{product.title}</h4>
         <div>
           <p>
-            <span className="text-red-500 line-through">150000</span>
+            <span className="text-red-500 line-through">{product.oldPrice}</span>
             <span className="text-gray-500">تومان</span>
           </p>
           <p>
-            <span className="text-green-800">120000</span>
+            <span className="text-green-800">{product.newPrice}</span>
             <span className="text-gray-500">تومان</span>
             <span className="text-gray-500">(کیلو)</span>
           </p>
