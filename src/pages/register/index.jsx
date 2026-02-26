@@ -59,12 +59,12 @@ export default function Register() {
           </form>
         </div>
         <div className="shadow-md border border-gray-400/20 p-5 rounded-md">
-          <p className="text-center text-sm lg:text-base">
+          <p className="text-center text-sm">
             از قبل عضو هستید؟
             <span className="text-green-800 font-semibold">وارد شوید</span>
           </p>
         </div>
-        <div className="flex items-center justify-center  gap-2 text-sm lg:text-base text-green-800">
+        <div className="flex items-center justify-center  gap-2 text-sm  text-green-800">
           <p>GREENY</p>
           <Divider orientation="vertical" flexItem />
           <div >
