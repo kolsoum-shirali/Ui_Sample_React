@@ -10,7 +10,7 @@ const options = [
 export default function ContactUs() {
   return (
     <div>
-      <BreadCrumbsBanner options={options} caption="ارتباط با ما" />
+      <BreadCrumbsBanner options={options} caption="تماس با ما" />
       <div className="container mx-auto p-5 mt-7 md:mt-16 space-y-10 lg:space-y-32">
         <ContactWays />
         <ContactComment />
