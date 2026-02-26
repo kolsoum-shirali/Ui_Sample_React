@@ -1,5 +1,12 @@
 import { Route, Routes, Outlet } from "react-router-dom";
-import { HomePage, Login, Register, Footer, Header, NotFound } from "./pages/index";
+import {
+  HomePage,
+  Login,
+  Register,
+  Footer,
+  Header,
+  NotFound,
+} from "./pages/index";
 import "./App.css";
 
 function App() {
@@ -9,9 +16,10 @@ function App() {
         {/* Layout Route for Header and Footer */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
         </Route>
+        {/* Routes without Layout */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         {/* Not Found Route */}
         <Route path="*" element={<NotFound />} />
       </Routes>
