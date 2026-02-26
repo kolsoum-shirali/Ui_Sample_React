@@ -1,6 +1,6 @@
 import BannerSlider from "./components/slider/BannerSlider";
 import HomeCategories from "./components/HomeCategories";
-import Services from "./components/services/Services";
+import Services from "../../components/common/Services";
 import BannerServices from "./components/services/BannerServices";
 import SingleBanner from "../../assets/img/06.jpg";
 import NewProductsSlider from "./components/NewProucts/NewProductsSlider";

@@ -2,7 +2,7 @@ import Logo from "../../assets/img/logo.png";
 import Divider from "@mui/material/Divider";
 export default function TopHeader() {
   return (
-    <div className="flex justify-between items-center py-5 px-2">
+    <div className="flex justify-between items-center p-5">
       <i className="icon-menu text-2xl text-green-800 lg:hidden"></i>
       <img src={Logo} alt={Logo} className="w-44" />
       <div className="gap-2 hidden lg:flex">

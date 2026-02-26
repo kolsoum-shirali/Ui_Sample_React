@@ -27,7 +27,7 @@ const Menus = [
 
 export default function DesktopMenubar() {
   return (
-    <div className="py-4 px-1 border-b border-gray-400/20 hidden lg:block">
+    <div className="py-4 px-5 border-b border-gray-400/20 hidden lg:block">
       <ul className="flex gap-x-8">
         {Menus.map((menu, index) => {
           return (

@@ -6,7 +6,7 @@ const options = [
 
 export default function ContactWays() {
   return (
-    <div className="col-span-12 md:col-span-4 lg:col-span-3 max-sm:px-5">
+    <div className="col-span-12 md:col-span-4 lg:col-span-3">
       <h3 className="text-lg lg:text-xl mb-2 md:mb-5">راه های ارتباطی</h3>
       <div className="space-y-1">
         {options.map((option, index) => {
