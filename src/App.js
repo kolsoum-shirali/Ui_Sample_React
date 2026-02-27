@@ -11,6 +11,7 @@ import {
   BlogPage,
   BlogDetail,
   Profile,
+  ProductsDetail,
 } from "./pages/index";
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/products/:id" element={<ProductsDetail />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/login" element={<Login />} />
