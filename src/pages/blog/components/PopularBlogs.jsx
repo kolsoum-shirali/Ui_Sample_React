@@ -54,15 +54,18 @@ const blogs = [
 export default function PopularBlogs() {
   return (
     <div className="shadow-md rounded-md border border-gray-400/20 p-5">
-      <h3 className="text-xl font-semibold relative before:absolute before:-bottom-2 before:right-0 before:w-14 before:h-[3px] before:bg-green-800">
+      <h3 className="text-xl font-semibold relative before:absolute before:-bottom-[2px] before:right-0 before:w-32 before:h-[3px] before:bg-green-800 border-b border-gray-400/20 pb-2">
         مطالب محبوب
       </h3>
       <div className="mt-5">
         {blogs.map((blog, index) => (
-          <Link to="/" className="bg-red-400">
-            <div
-              key={index}
-              className="grid grid-cols-12 gap-3 p-3 rounded-md hover:text-green-800 border-b border-gray-400/20  last:border-0 hover:bg-slate-100 group"
+          <div
+            key={index}
+            className="border-b border-gray-400/20  last:border-0"
+          >
+            <Link
+              to="/"
+              className="grid grid-cols-12 gap-3 p-3 rounded-md hover:text-green-800 hover:bg-slate-100 group"
             >
               <div className="col-span-4 h-24 rounded-sm flex justify-center overflow-hidden">
                 <img
@@ -77,8 +80,8 @@ export default function PopularBlogs() {
                   5 دی 1405
                 </p>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
