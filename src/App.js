@@ -8,6 +8,7 @@ import {
   NotFound,
   AboutUs,
   ContactUs,
+  BlogPage,
 } from "./pages/index";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* Routes without Layout */}
