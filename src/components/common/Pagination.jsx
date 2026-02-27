@@ -52,11 +52,11 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex items-center justify-center gap-3">
+    <div className="flex items-center justify-center md:gap-3">
       <button
         onClick={handlePrevious}
         disabled={currentPage === 1}
-        className={`p-3 rounded-full text-white ${currentPage === 1 ? "bg-gray-400" : "bg-green-600"}`}
+        className={`p-2 rounded-full text-white ${currentPage === 1 ? "bg-gray-400" : "bg-green-600"}`}
       >
         <i className="icon-right-big"></i>
       </button>
@@ -69,7 +69,7 @@ export default function Pagination({
                 onPageChange(page);
               }
             }}
-            className={`rounded-full border border-gray-400/20 aspect-square w-10 h-10 mx-1 ${currentPage === page ? "font-bold text-xl bg-green-600 text-white" : "bg-white text-black"}`}
+            className={`rounded-full border border-gray-400/20 aspect-square w-10 h-10 md:mx-1 ${currentPage === page ? "font-bold text-xl bg-green-600 text-white" : "bg-white text-black"}`}
             disabled={typeof page === "string"}
           >
             {page}
@@ -79,7 +79,7 @@ export default function Pagination({
       <button
         onClick={handleNext}
         disabled={currentPage === pageCount}
-        className={`p-3 rounded-full text-white ${currentPage === pageCount ? "bg-gray-400" : "bg-green-600"}`}
+        className={`p-2 rounded-full text-white ${currentPage === pageCount ? "bg-gray-400" : "bg-green-600"}`}
       >
         <i className="icon-left-big"></i>
       </button>
