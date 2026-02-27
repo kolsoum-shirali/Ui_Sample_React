@@ -9,6 +9,7 @@ import {
   AboutUs,
   ContactUs,
   BlogPage,
+  BlogDetail,
 } from "./pages/index";
 import "./App.css";
 
@@ -22,6 +23,8 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+
           <Route path="*" element={<NotFound />} />
         </Route>
         {/* Routes without Layout */}
