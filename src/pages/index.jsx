@@ -9,6 +9,8 @@ export { default as NotFound } from "./notFound";
 export { default as BlogPage } from "./blog";
 export { default as Profile } from "./profile";
 export { default as BlogDetail } from "./blog/BlogDetail";
+export { default as ProductsDetail } from "./products/ProductsDetail";
+
 
 /* -- Layout -- */
 export { default as Footer } from "../components/layout/Footer";
