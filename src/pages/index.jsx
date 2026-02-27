@@ -6,6 +6,7 @@ export { default as Register } from "./register";
 export { default as AboutUs } from "./about-us";
 export { default as ContactUs } from "./contact-us";
 export { default as NotFound } from "./notFound";
+export { default as BlogPage } from "./blog";
 
 
 /* -- Layout -- */
