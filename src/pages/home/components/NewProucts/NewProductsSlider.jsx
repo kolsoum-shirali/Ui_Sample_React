@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { useRef } from "react";
+
 import SingleProduct from "./SingleProduct";
 import product1 from "../../../../assets/img/Products/1.webp";
 import product2 from "../../../../assets/img/Products/2.jpg";
@@ -11,25 +13,41 @@ import product7 from "../../../../assets/img/Products/7.jpg";
 import product8 from "../../../../assets/img/Products/8.jpg";
 
 const products = [
-  { img: product1,title:'گل کلم',oldPrice:55000,newPrice:40000 },
-  { img: product2,title:'سیب زمینی',oldPrice:55000,newPrice:40000  },
-  { img: product3,title:'خیار',oldPrice:55000,newPrice:40000  },
-  { img: product4,title:'بادمجان',oldPrice:55000,newPrice:40000  },
-  { img: product5,title:'پیاز',oldPrice:55000,newPrice:40000  },
-  { img: product6,title:'فلفل دلمه ای',oldPrice:55000,newPrice:40000  },
-  { img: product7,title:'گوجه',oldPrice:55000,newPrice:40000  },
-  { img: product8,title:'بامیه',oldPrice:55000,newPrice:40000  },
+  { img: product1, title: "گل کلم", oldPrice: 55000, newPrice: 40000 },
+  { img: product2, title: "سیب زمینی", oldPrice: 55000, newPrice: 40000 },
+  { img: product3, title: "خیار", oldPrice: 55000, newPrice: 40000 },
+  { img: product4, title: "بادمجان", oldPrice: 55000, newPrice: 40000 },
+  { img: product5, title: "پیاز", oldPrice: 55000, newPrice: 40000 },
+  { img: product6, title: "فلفل دلمه ای", oldPrice: 55000, newPrice: 40000 },
+  { img: product7, title: "گوجه", oldPrice: 55000, newPrice: 40000 },
+  { img: product8, title: "بامیه", oldPrice: 55000, newPrice: 40000 },
 ];
 
 export default function NewProductsSlider() {
+  const swiperRef = useRef(null); // Create a ref for the Swiper instance
+  // Function to go to the next slide
+  const goToNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  // Function to go to the previous slide
+  const goToPrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
   return (
     <div>
       <h1 className="text-center text-2xl lg:text-4xl">محصولات تازه روز</h1>
       <div className="relative">
         <Swiper
+          ref={swiperRef}
           navigation={{
-            nextEl: "#next-btn",
-            prevEl: "#prev-btn",
+            nextEl: "#next-btn-product",
+            prevEl: "#prev-btn-product",
           }}
           pagination={{
             type: "bullets",
@@ -69,11 +87,11 @@ export default function NewProductsSlider() {
 
         <div className="hidden xl:block">
           <i
-            id="prev-btn"
+            id="prev-btn-product"
             className="icon-right-open text-4xl absolute -right-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
           <i
-            id="next-btn"
+            id="next-btn-product"
             className="icon-left-open text-4xl absolute -left-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
         </div>

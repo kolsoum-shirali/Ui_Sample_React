@@ -32,7 +32,7 @@ export default function BannerSlider() {
     <Swiper
       pagination={true}
       modules={[Pagination]}
-      className="w-full h-full col-span-12 md:col-span-8"
+      className="w-full h-full col-span-12 lg:col-span-8"
     >
       {slidersInfo.map((item, index) => {
         return (
