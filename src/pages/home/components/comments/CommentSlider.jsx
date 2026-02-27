@@ -56,8 +56,8 @@ export default function CommentSlider() {
           grabCursor={true}
           centeredSlides={true}
           navigation={{
-            nextEl: "#next-btn",
-            prevEl: "#prev-btn",
+            nextEl: "#next-btn-customer",
+            prevEl: "#prev-btn-customer",
           }}
           pagination={{
             type: "bullets",
@@ -94,11 +94,11 @@ export default function CommentSlider() {
 
         <div className="hidden xl:block">
           <i
-            id="prev-btn"
+            id="prev-btn-customer"
             className="icon-right-open text-4xl absolute -right-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
           <i
-            id="next-btn"
+            id="next-btn-customer"
             className="icon-left-open text-4xl absolute -left-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
         </div>

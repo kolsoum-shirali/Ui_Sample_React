@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import BlogCard from "./BlogCard";
@@ -60,8 +61,8 @@ export default function BlogSlider() {
       <div className="relative">
         <Swiper
           navigation={{
-            nextEl: "#next-btn",
-            prevEl: "#prev-btn",
+            nextEl: "#next-btn-blog",
+            prevEl: "#prev-btn-blog",
           }}
           modules={[Navigation, Autoplay]}
           className="mt-5 lg:mt-10"
@@ -92,19 +93,22 @@ export default function BlogSlider() {
 
         <div className="hidden xl:block">
           <i
-            id="prev-btn"
+            id="prev-btn-blog"
             className="icon-right-open text-4xl absolute -right-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
           <i
-            id="next-btn"
+            id="next-btn-blog"
             className="icon-left-open text-4xl absolute -left-16 top-1/2 z-1 text-green-600 cursor-pointer"
           ></i>
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="bg-green-600 text-white p-3 md:px-8 rounded-md text-sm lg:text-base hover:bg-white hover:transition-colors hover:text-green-800 border-2 border-green-600 mt-5">
+        <Link
+          to="/blog"
+          className="bg-green-600 text-white p-3 md:px-8 rounded-md text-sm lg:text-base hover:bg-white hover:transition-colors hover:text-green-800 border-2 border-green-600 mt-5"
+        >
           مشاهده تمام مطالب بلاگ <i className="icon-eye"></i>
-        </button>
+        </Link>
       </div>
     </div>
   );
