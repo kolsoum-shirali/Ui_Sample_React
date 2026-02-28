@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-import { useRef } from "react";
-
 import SingleProduct from "./SingleProduct";
 import product1 from "../../../../assets/img/Products/1.webp";
 import product2 from "../../../../assets/img/Products/2.jpg";
@@ -24,27 +22,11 @@ const products = [
 ];
 
 export default function NewProductsSlider() {
-  const swiperRef = useRef(null); // Create a ref for the Swiper instance
-  // Function to go to the next slide
-  const goToNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  // Function to go to the previous slide
-  const goToPrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
-
   return (
     <div>
       <h1 className="text-center text-2xl lg:text-4xl">محصولات تازه روز</h1>
       <div className="relative">
         <Swiper
-          ref={swiperRef}
           navigation={{
             nextEl: "#next-btn-product",
             prevEl: "#prev-btn-product",
