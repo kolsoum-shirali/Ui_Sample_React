@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       colors: {
         mainPurple: "#7C32DA",
-        mainPink:"#FC2D85"
+        mainPink:"#FC2D85",
+        ghostWhite:"#EDEFFB",
+        lavender:"#E6E3F9",
+        liberty:"#61629F"
       },
     },
   },
