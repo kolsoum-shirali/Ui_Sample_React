@@ -1,19 +1,33 @@
-import ContactWays from "./ContactWays";
-import EasyAccess from "./EasyAccess";
-import FooteDesc from "./FooteDesc";
+import CustomerCare from "./CustomerCare";
+import Categories from "./Categories";
+import FooterDesc from "./FooterDesc";
+import PagesItems from "./PagesItems";
+import Socials from "../common/Socials";
 export default function Footer() {
   return (
-    <div className="border-t border-gray-400/20 mt-10 lg:mt-20">
-      <div className="container mx-auto pt-7 px-5 lg:pt-14">
-        <div className="grid grid-cols-12  gap-y-7 lg:gap-10">
-          <FooteDesc />
-          <ContactWays />
-          <EasyAccess />
+    <div className="bg-ghostWhite mt-10 lg:mt-20">
+      <div className="container mx-auto py-20">
+        <div className="grid grid-cols-6 gap-y-7 lg:gap-10">
+          <FooterDesc />
+          <Categories />
+          <CustomerCare />
+          <PagesItems />
         </div>
-        <p className="text-center bg-green-600 p-3 rounded-t-md mt-7 lg:mt-14 text-sm md:text-base text-white">
-          <i className="icon-copyright"></i>
-          تمامی حقوق این سایت متعلق به شرکت گرینی می باشد
-        </p>
+      </div>
+      <div className="bg-lavender py-5">
+        <div className="w-9/12 mx-auto">
+          <div className="grid grid-cols-6">
+            <div className="col-span-4 flex items-center">
+              <p className="text-sm md:text-base text-gray-400">
+                <i className="icon-copyright"></i>
+                Webecy - All Rights Reserved
+              </p>
+            </div>
+            <div className="col-span-2">
+              <Socials />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
