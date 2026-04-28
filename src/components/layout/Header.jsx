@@ -1,26 +1,13 @@
-import { useState } from "react";
 import TopHeader from "./TopHeader";
-import DesktopMenubar from "./DesktopMenubar";
-import MobileMenubar from "./MobileMenubar";
-
+import HeaderMenu from "./HeaderMenu";
 export default function Header() {
-  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuVisible(!isMobileMenuVisible);
-  };
-
   return (
-    <div className="shadow-md">
-      <div className="container mx-auto">
+    <div className="">
+      <div className="">
         <div className="relative max-lg:mb-24">
-        <TopHeader toggleMobileMenu={toggleMobileMenu} />
+          <TopHeader />
+          <HeaderMenu />
         </div>
-        <DesktopMenubar />
-        <MobileMenubar
-          closeMenu={toggleMobileMenu}
-          menuShow={isMobileMenuVisible}
-        />
       </div>
     </div>
   );
