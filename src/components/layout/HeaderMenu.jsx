@@ -34,7 +34,7 @@ export default function HeaderMenu() {
             name="search"
             autoComplete="off"
             placeholder=""
-            className="h-11 border border-gray-400/20 focus:border focus:border-mainPurple px-3 placeholder:text-sm text-sm placeholder:text-gray-500 w-2/5"
+            className="h-11 border border-gray-400/20 focus:border focus:border-mainPink px-3 placeholder:text-sm text-sm placeholder:text-gray-500 w-2/5"
           />
           <span className="bg-mainPink px-3 flex justify-center items-center">
             <i className="icon-search text-white text-xl"></i>
