@@ -1,18 +1,8 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 import {
   HomePage,
-  Login,
-  Register,
   Footer,
-  Header,
-  NotFound,
-  AboutUs,
-  ContactUs,
-  BlogPage,
-  BlogDetail,
-  Profile,
-  ProductsDetail,
-  CreateAds,
+  Header
 } from "./pages/index";
 import "./App.css";
 
@@ -22,17 +12,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/blog/:id" element={<BlogDetail />} />
-          <Route path="/products/:id" element={<ProductsDetail />} />
-          <Route path="/create-ads" element={<CreateAds />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );
