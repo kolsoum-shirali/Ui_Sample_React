@@ -36,7 +36,7 @@ export default function TopHeader() {
         <div className="col-span-1 flex">
           {options.map((opt, index) => {
             return (
-              <div key={index} className={index == 1 ? "ml-10" : ""}>
+              <div key={index} className={index === 1 ? "ml-10" : ""}>
                 <i className={opt.icon}></i>
                 <span>{opt.title}</span>
               </div>
