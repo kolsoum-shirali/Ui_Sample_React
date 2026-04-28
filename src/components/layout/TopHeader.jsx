@@ -1,33 +1,85 @@
-import Logo from "../../assets/img/logo.png";
-import Divider from "@mui/material/Divider";
 import { Link } from "react-router-dom";
+const options = [
+  { title: "mhhasanul@gmail.com", icon: "icon-mail" },
+  { title: "(12345)67890", icon: "icon-phone" },
+];
+const Menus = [
+  {
+    title: "English",
+    url: "",
+    subMenu: [
+      { title: "Germany", url: "/" },
+      { title: "Persian", url: "/" },
+      { title: "Arabic", url: "/" },
+    ],
+  },
+  {
+    title: "USD",
+    url: "",
+    subMenu: [
+      { title: "USD_1", url: "/" },
+      { title: "USD_1", url: "/" },
+      { title: "USD_1", url: "/" },
+    ],
+  },
+  { title: "Login", url: "/", subMenu: [], icon: "icon-user-o" },
 
-export default function TopHeader({ toggleMobileMenu }) {
+  { title: "Wishlist", url: "/", subMenu: [], icon: "icon-heart" },
+  { title: "", url: "/", subMenu: [], icon: "icon-shopping-bag" },
+];
+
+export default function TopHeader() {
   return (
-    <div className="flex justify-between items-center p-5 max-lg:fixed top-0 left-0 right-0 z-10 bg-white">
-      <i
-        className="icon-menu text-2xl text-green-800 lg:hidden cursor-pointer"
-        onClick={toggleMobileMenu}
-      ></i>
-      <img src={Logo} alt={Logo} className="w-44" />
-      <div className="gap-2 hidden lg:flex">
-        <div className="flex items-center gap-2 shadow-md rounded-sm">
-          <Link to="/register" className="p-2">
-            <i className="icon-user-circle-o"></i>
-            عضویت
-          </Link>
-          <Divider orientation="vertical" flexItem />
-          <Link to="/login" className="p-2">
-            <i className="icon-user-circle-o"></i>
-            ورود
-          </Link>
+    <div className="bg-mainPurple text-white py-3">
+      <div className="container mx-auto grid grid-cols-2 ">
+        <div className="col-span-1 flex">
+          {options.map((opt, index) => {
+            return (
+              <div key={index} className={index == 1 ? "ml-10" : ""}>
+                <i className={opt.icon}></i>
+                <span>{opt.title}</span>
+              </div>
+            );
+          })}
         </div>
-        <Link to="/login" className="shadow-md rounded-sm p-3 relative">
-          <i className="icon-shopping-bag"></i>
-          <span className="bg-green-600 aspect-square rounded-full absolute right-0 -top-2 min-w-6 max-h:h-6 text-center text-white">
-            99
-          </span>
-        </Link>
+        <div className="col-span-1 ml-auto">
+          <ul className="flex gap-x-8">
+            {Menus.map((menu, index) => {
+              return (
+                <li
+                  key={index}
+                  className="relative hover:text-purple-900 transition-colors bg cursor-pointer group"
+                >
+                  {menu.url ? (
+                    <Link to={menu.url}>
+                      {menu.title} <i className={menu.icon}></i>
+                    </Link>
+                  ) : (
+                    <span>{menu.title}</span>
+                  )}
+                  {menu.subMenu.length > 0 && (
+                    <i className="icon-down-open"></i>
+                  )}
+                  {menu.subMenu.length > 0 && (
+                    <div className="absolute right-0 w-56 bg-white opacity-0 border border-gray-400/20 shadow-md z-10 p-5 invisible transition-all transform translate-y-16 group-hover:translate-y-0 duration-300 ease-in-out delay-150 group-hover:opacity-100 group-hover:visible">
+                      <div>
+                        {menu.subMenu.map((item, inx) => {
+                          return (
+                            <Link key={inx} to={item.url} className="text-sm">
+                              <h6 className="text-gray-500 hover:bg-slate-100 p-2 hover:text-purple-900 transition-colors cursor-pointer ">
+                                {item.title}
+                              </h6>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
