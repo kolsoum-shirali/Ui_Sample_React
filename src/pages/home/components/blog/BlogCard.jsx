@@ -6,7 +6,7 @@ export default function BlogCard({ blog }) {
       <div className="max-h-64 overflow-hidden flex justify-center rounded-md">
         <img
           src={blog.img}
-          alt=""
+          alt="{blog.img}"
           className="w-full h-auto rounded-md hover:scale-110 transition-scale duration-500
 "
         />
