@@ -32,7 +32,7 @@ const menuOptions = [
 export default function TopHeader() {
   return (
     <div className="bg-mainPurple text-white py-3">
-      <div className="container mx-auto grid grid-cols-2 ">
+      <div className="w-8/12 mx-auto grid grid-cols-2 ">
         <div className="col-span-1 flex">
           {options.map((opt, index) => {
             return (

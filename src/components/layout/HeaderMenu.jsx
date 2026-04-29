@@ -22,7 +22,7 @@ const menuOptions = [
 export default function HeaderMenu() {
   return (
     <div className="py-3">
-      <div className="container mx-auto grid grid-cols-2 ">
+      <div className="w-8/12 mx-auto grid grid-cols-2 ">
         <div className="col-span-1 flex items-end">
           <img src={Logo} alt="main-logo" className="mr-10" />
           <Menu menuOptions={menuOptions} />
