@@ -17,7 +17,7 @@ const categories = [
 ];
 export default function TopCategories() {
   return (
-    <div className="top-category md:w-8/12 mx-auto max-md:px-5">
+    <div className="md:w-8/12 mx-auto max-md:px-5">
       <h1 className="text-center text-2xl lg:text-4xl text-liberty font-bold">
         Top Categories
       </h1>
@@ -25,6 +25,7 @@ export default function TopCategories() {
         pagination={true}
         modules={[Pagination]}
         className="pt-5 pb-10 lg:py-10"
+        spaceBetween={5}
         breakpoints={{
           640: {
             slidesPerView: 2,
