@@ -4,14 +4,16 @@ import BrandList from "./components/brand/BrandList";
 import Banner from "./components/banner/‌Banner";
 import TopCategories from "./components/categories/TopCategories";
 import TrendingProducts from "./components/products/trend/TrendingProducts";
-import FeatureProducts from './components/products/feature/FeatureProducts'
-import Offers from "./components/offers/Offers"
+import FeatureProducts from "./components/products/feature/FeatureProducts";
+import Offers from "./components/offers/Offers";
+import UniqueBanner from "./components/banner/UniqueBanner";
 const HomePage = () => {
   return (
     <div className="space-y-5 md:space-y-20">
       <HeaderSlider />
-      <FeatureProducts/>
-      <Offers/>
+      <FeatureProducts />
+      <Offers />
+      <UniqueBanner/>
       <TrendingProducts />
       <TopCategories />
       <Banner />
