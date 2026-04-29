@@ -1,3 +1,5 @@
 .banner::before {
-  background: url(../../assets/img/banner-shape.png) no-repeat center; 
+  background: url(../../assets/img/banner.jpg) no-repeat center; 
+  content: "";
+  width: 100%;
 }
