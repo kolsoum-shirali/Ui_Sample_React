@@ -1,23 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './styles/font/index.css';
-@import './styles/icon/icon.css';
+@import "./styles/icon/icon.css";
 
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  direction: rtl;
-  font-family: Yekan;
-}
-
-
-input,
-textarea {
-  font-family: Yekan;
 }
 
 a {
@@ -29,14 +17,12 @@ ul {
   list-style: none;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: 1px solid transparent; 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid transparent;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-background-color: #16a34a !important;
-}
-.MobileMenubar {
-  max-height: 100vh;       
-  overflow-y: auto;    
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fc2d85 !important;
 }
