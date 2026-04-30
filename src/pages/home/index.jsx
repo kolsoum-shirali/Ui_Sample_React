@@ -8,6 +8,7 @@ import FeatureProducts from "./components/products/feature/FeatureProducts";
 import Offers from "./components/offers/Offers";
 import UniqueBanner from "./components/banner/UniqueBanner";
 import ProductsTab from "./components/products/tabs/ProductsTab"
+import DiscountTab from './components/products/tabs/DiscountTab'
 const HomePage = () => {
   return (
     <div className="space-y-5 md:space-y-20">
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Offers />
       <UniqueBanner/>
       <TrendingProducts />
+      <DiscountTab/>
       <TopCategories />
       <Banner />
       <BrandList />
