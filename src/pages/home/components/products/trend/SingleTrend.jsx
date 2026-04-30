@@ -11,8 +11,8 @@ export default function SingleTrend({ product }) {
       </div>
       <div className="font-medium py-5">
         <h3 className="text-sm text-liberty text-center">{product.title}</h3>
-        <div className="flex justify-center gap-3">
-          <h3 className="text-sm text-liberty">
+        <div className="flex justify-center items-center gap-3">
+          <h3 className="text-sm text-liberty mt-1">
             <span>$</span>
             {product?.new_price}
           </h3>
