@@ -10,7 +10,7 @@ export default function Categories() {
   return (
     <div className="col-span-6 md:col-span-1">
       <h3 className="text-lg lg:text-xl mb-2 md:mb-7">Categories</h3>
-      <div className="space-y-4">
+      <div className="space-y-2 lg:space-y-4">
         {options.map((option, index) => {
           return (
             <div key={index}>

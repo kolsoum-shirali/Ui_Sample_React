@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="bg-ghostWhite mt-10 lg:mt-20">
       <div className="container mx-auto p-7 xl:px-0 md:py-20">
-        <div className="grid grid-cols-6 gap-y-7 lg:gap-10">
+        <div className="grid grid-cols-6 gap-y-5 lg:gap-10">
           <FooterDesc />
           <Categories />
           <CustomerCare />
