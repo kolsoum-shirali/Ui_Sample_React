@@ -41,7 +41,7 @@ export default function MobileMenubar({ closeMenu, menuShow }) {
   }, [menuShow]);
   return (
     <div
-      className={`MobileMenubar absolute inset-0 z-50 py-4 px-5 bg-white transition-transform duration-300 ${
+      className={`overflow-y-auto min-h-screen absolute inset-0 z-50 py-4 px-5 bg-white transition-transform duration-300 ${
         menuShow ? "translate-x-0" : "-translate-x-full"
       }`}
     >

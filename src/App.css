@@ -26,8 +26,3 @@ select:focus {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fc2d85 !important;
 }
-
-.MobileMenubar {
-  min-height: 100vh;       
-  overflow-y: auto;    
-}
