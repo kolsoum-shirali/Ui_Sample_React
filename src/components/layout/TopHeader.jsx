@@ -32,18 +32,18 @@ const menuOptions = [
 export default function TopHeader() {
   return (
     <div className="bg-mainPurple text-white py-3">
-      <div className="w-8/12 mx-auto grid grid-cols-2 ">
-        <div className="col-span-1 flex">
+      <div className="w-11/12 xl:w-8/12 mx-auto grid grid-cols-2 ">
+        <div className="col-span-2 md:col-span-1 flex gap-2 flex-wrap">
           {options.map((opt, index) => {
             return (
-              <div key={index} className={index === 1 ? "ml-10" : ""}>
+              <div key={index} className={`flex ${index === 1 ? "lg:ml-10" : ""}`}>
                 <i className={opt.icon}></i>
                 <span>{opt.title}</span>
               </div>
             );
           })}
         </div>
-        <div className="col-span-1 ml-auto">
+        <div className="col-span-1 ml-auto hidden md:block">
           <Menu menuOptions={menuOptions} />
         </div>
       </div>

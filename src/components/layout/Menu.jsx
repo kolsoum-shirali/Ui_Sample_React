@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function HeaderMenu({ menuOptions }) {
   return (
-    <ul className="flex gap-x-6">
+    <ul className="flex items-end h-full gap-x-2 xl:gap-x-6">
       {menuOptions.map((menu, index) => {
         return (
           <li
             key={index}
-            className="relative hover:text-purple-900 transition-colors bg cursor-pointer group"
+            className="relative flex hover:text-purple-900 transition-colors bg cursor-pointer group"
           >
             {menu.url ? (
-              <Link to={menu.url}>
+              <Link to={menu.url} className="flex">
                 {menu.title} <i className={menu.icon}></i>
               </Link>
             ) : (

@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="">
       <div className="">
-        <div className="relative max-lg:mb-24">
+        <div>
           <TopHeader />
           <HeaderMenu />
         </div>
