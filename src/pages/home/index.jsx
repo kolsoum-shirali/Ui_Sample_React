@@ -7,11 +7,13 @@ import TrendingProducts from "./components/products/trend/TrendingProducts";
 import FeatureProducts from "./components/products/feature/FeatureProducts";
 import Offers from "./components/offers/Offers";
 import UniqueBanner from "./components/banner/UniqueBanner";
+import ProductsTab from "./components/products/tabs/ProductsTab"
 const HomePage = () => {
   return (
     <div className="space-y-5 md:space-y-20">
       <HeaderSlider />
       <FeatureProducts />
+      <ProductsTab/>
       <Offers />
       <UniqueBanner/>
       <TrendingProducts />
