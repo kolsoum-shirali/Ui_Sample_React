@@ -8,7 +8,7 @@ const options = [
 
 export default function CustomerCare() {
   return (
-    <div className="lg:col-span-1">
+    <div className="col-span-6  md:col-span-1">
       <h3 className="text-lg lg:text-xl mb-2 md:mb-7">Customer Care</h3>
       <div className="space-y-4">
         {options.map((option, index) => {

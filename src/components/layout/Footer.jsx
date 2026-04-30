@@ -6,7 +6,7 @@ import Socials from "../common/Socials";
 export default function Footer() {
   return (
     <div className="bg-ghostWhite mt-10 lg:mt-20">
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto p-7 xl:px-0 md:py-20">
         <div className="grid grid-cols-6 gap-y-7 lg:gap-10">
           <FooterDesc />
           <Categories />
@@ -15,15 +15,15 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-lavender py-5">
-        <div className="w-9/12 mx-auto">
-          <div className="grid grid-cols-6">
-            <div className="col-span-4 flex items-center">
+        <div className="w-10/12 md:w-9/12 mx-auto">
+          <div className="grid grid-cols-6 gap-3">
+            <div className="col-span-6 md:col-span-4 flex items-center">
               <p className="text-sm md:text-base text-gray-400">
                 <i className="icon-copyright"></i>
                 Webecy - All Rights Reserved
               </p>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-6 md:col-span-2">
               <Socials />
             </div>
           </div>

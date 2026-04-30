@@ -1,6 +1,6 @@
 export default function FooteDesc() {
   return (
-    <div className="lg:col-span-2 space-y-5">
+    <div className="col-span-6 md:col-span-2 space-y-5">
       <h1 className="font-bold text-4xl">HeKto</h1>
      <div className="flex">
        <input
@@ -11,7 +11,7 @@ export default function FooteDesc() {
         placeholder="Enter Email Address"
         className="h-11 border border-gray-400/20 focus:border focus:border-mainPink px-3 placeholder:text-sm text-sm placeholder:text-gray-400 w-6/12"
       />
-      <button className="bg-mainPink text-white px-10 rounded-sm text-sm">Sign Up</button>
+      <button className="bg-mainPink text-white px-5 lg:px-10 rounded-sm text-sm">Sign Up</button>
      </div>
       <div className="text-sm lg:text-base text-gray-400 space-y-1">
         <h6>Contact Info</h6>
