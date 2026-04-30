@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
 import SingleFeature from "./SingleFeature";
-import chair8 from "../../../../../assets/img/chai8.png";
+import chair8 from "../../../../../assets/img/chair8.png";
 import chair9 from "../../../../../assets/img/chair9.png";
 import chair10 from "../../../../../assets/img/chair10.png";
 import chair11 from "../../../../../assets/img/chair11.png";
