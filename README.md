@@ -1,8 +1,7 @@
 ### Priview ( images )
 
-![](public/prev_1.png)
-![](public/prev_2.png)
-![](public/prev_3.png)
+![](public/prev_1.jpg)
+![](public/prev_2.jpg)
 
 ---
 
